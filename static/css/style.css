@@ -24,3 +24,10 @@ html, body {
     border-radius: 2px;
     margin: 2px;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
