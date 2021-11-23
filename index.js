@@ -68,7 +68,7 @@ app.post('/', (req,res) => {
 })
 
 // APP DELETE ROUTE
-app.delete('/', (req,res) => {
+app.delete('/:id', (req,res) => {
     db.widget.destroy({
         where: {id: req.body.id} 
     })
