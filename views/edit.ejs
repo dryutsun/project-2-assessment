@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/static/css/style.css">
+<h1>
+    <%= widget.description %>
+</h1>
+<form action="/edit/<%=widget.id %>/?_method=PUT" method="POST">
+<label for="description">Description: </label>
+<input type="text" name="description" value="<%= widget.description%>">
+<label for="quantity">Quantity </label>
+<input type="number" name="quantity" value="<%= widget.quantity%>">
+<button type="submit">Submit</button>
+</form>
